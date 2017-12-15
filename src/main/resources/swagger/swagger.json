@@ -1,0 +1,43 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "version": "1.0.1",
+    "title": "JavaEE Swagger Example"
+  },
+  "host": "javaee.swagger.test",
+  "basePath": "/",
+  "tags": [
+    {
+      "name" : "Test"
+    }
+  ],
+
+  "schemes": [
+    "http"
+  ],
+
+  "paths": {
+    "/tests": {
+      "get": {
+        "tags": [
+          "Test"
+        ],
+        "summary": "Get list of User",
+        "description": "",
+        "operationId": "list",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [],
+        "responses": {
+          "default": {
+            "description": "successful operation"
+          }
+        }
+      }
+    }
+  }
+}
